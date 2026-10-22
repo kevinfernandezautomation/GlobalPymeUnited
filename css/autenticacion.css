@@ -1,0 +1,24 @@
+
+/* Global PYME United-specific adaptation; QA login layout and controls remain intact. */
+.auth-disclaimer{font-size:.8rem;line-height:1.5;margin-top:1rem;opacity:.8}
+html.high-contrast{filter:contrast(1.45)}html.underline-links a{text-decoration:underline!important}html.reduce-motion *,html.reduce-motion *:before,html.reduce-motion *:after{animation:none!important;transition:none!important}
+html.dark{color-scheme:dark}html.dark body{background:#101a2c;color:#eaf1fa}html.dark .login-card,html.dark .topbar{background:#17263c;color:#eaf1fa}html.dark input{background:#101a2c;color:#fff}html.dark .login-copy{color:#eaf1fa}
+@media(max-width:850px){.main-nav.open{display:flex!important;flex-wrap:wrap}}
+
+
+/* Diseño de selección tomado de .main-nav a.active en login.html */
+.topbar .actions .nav-link.active,
+.topbar .actions .nav-link[aria-current="page"]{
+ color:var(--text,#0f1f38)!important;
+ background:var(--surface2,#edf4ff)!important;
+ border-radius:10px;
+}
+.topbar .actions .nav-link:hover{background:var(--surface2,#edf4ff)}
+[data-theme="dark"] .topbar .actions .nav-link.active,
+[data-theme="dark"] .topbar .actions .nav-link[aria-current="page"]{
+ color:#f1f5fb!important;background:#263a57!important;
+}
+.topbar .main-nav a.active,.topbar .main-nav a[aria-current="page"]{
+ color:var(--text);background:var(--surface2);
+}
+.topbar .header-actions > a.active{box-shadow:0 0 0 2px var(--primary,#2563eb);}

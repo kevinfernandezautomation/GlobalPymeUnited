@@ -1,0 +1,55 @@
+
+/* Rediseño visual del directorio: conserva IDs, formularios y eventos existentes. */
+:root{--pa-blue:#0869f9;--pa-ink:#10234b;--pa-line:#dce7f7}
+body{background:linear-gradient(180deg,#eff6ff 0,#f8fbff 46rem,#f5f8fe 100%)}
+.hero-directory{position:relative;isolation:isolate;overflow:hidden;max-width:none;min-height:390px;padding:46px max(4vw,calc((100vw - 1420px)/2)) 34px;grid-template-columns:minmax(0,1.3fr) minmax(270px,.7fr);background:radial-gradient(circle at 76% 40%,#8cc5ff 0%,#d8edff 25%,transparent 51%),linear-gradient(100deg,#f4f9ff 10%,#e3f1ff 100%);border-bottom:1px solid #d5e5fa}
+.hero-directory .hero-copy{position:relative;z-index:2;max-width:830px}
+.hero-directory .eyebrow{color:#0064d8;letter-spacing:.075em;font-weight:800}
+.hero-directory h1{font-size:clamp(2.4rem,4vw,4rem);line-height:1.12;max-width:790px;color:#0b1c40;letter-spacing:-.047em;margin:18px 0}
+.hero-directory .hero-copy>p{font-size:clamp(1rem,1.25vw,1.15rem);color:#294568;max-width:760px;line-height:1.65}
+.hero-badges{margin-top:25px;gap:12px}
+.hero-badges>span{display:inline-flex;align-items:center;gap:7px;padding:12px 18px;border-radius:15px;background:#fff;box-shadow:0 9px 26px #12569b15;border:1px solid #dce7f6;color:#40577a;font-size:.92rem}
+.hero-badges b{font-size:1.65rem;color:#092457;line-height:1.1}
+.hero-visual{position:relative;align-self:stretch;min-height:270px;display:grid;place-items:center}
+.hero-visual .globe{display:grid;place-items:center;width:min(24vw,310px);height:min(24vw,310px);min-width:205px;min-height:205px;border-radius:50%;font-size:clamp(8rem,15vw,13rem);background:radial-gradient(circle at 25% 20%,#d8faff,#0b7deb 52%,#07358a 100%);box-shadow:inset -20px -15px 38px #002a7b70,0 15px 60px #005fc155}
+.orbit{position:absolute;border:2px solid #ffffffaa;border-radius:50%;width:90%;height:56%;transform:rotate(-25deg);box-shadow:0 0 18px #5ec6ff99}.orbit-two{transform:rotate(35deg);height:76%;width:72%}
+.visual-chip{position:absolute;background:#ffffffed;border:1px solid #c8e2ff;border-radius:18px;padding:12px;font-size:2rem;box-shadow:0 12px 30px #005cae3a}.chip-a{top:12%;left:8%}.chip-b{top:25%;right:5%}.chip-c{bottom:10%;left:16%}
+.notice{max-width:1440px;margin:18px auto;padding:16px 22px;background:#eaf4ff;border-color:#c8e0ff;color:#1b426e;box-shadow:none}
+.notice strong{color:#073c86}
+.workspace{max-width:1510px;padding:0 2.5vw 70px}
+.directory-panel{padding:24px;border-radius:22px;border:1px solid #e0e9f5;box-shadow:0 14px 40px #163b7610}
+.panel-head{gap:20px;flex-wrap:wrap}
+.panel-head h2{display:flex;align-items:center;gap:13px;font-size:1.55rem;color:var(--text)}
+.directory-heading-icon{width:42px;height:42px;border-radius:13px;display:inline-grid;place-items:center;color:#fff;background:linear-gradient(145deg,#1686ff,#0755db);font-size:2rem}
+.panel-head p{font-size:.9rem;margin-left:55px}
+.filters{grid-template-columns:1fr 1fr 1fr;gap:12px}
+.filters>select,.filters .searchbox{min-height:48px;border:1px solid var(--border);border-radius:12px;background:var(--surface);box-shadow:0 2px 6px #0b2d5408}
+.filters .searchbox input{min-width:0}
+.directory-actions{margin:10px 0 20px}
+.directory-actions .primary-btn{padding:12px 20px;border-radius:12px;background:linear-gradient(115deg,#174b7a,#006bfa);box-shadow:0 5px 12px #0054b020;color:#fff}
+.secondary-btn{border-radius:12px;padding:11px 17px}
+.college-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.college-card{position:relative;min-height:235px;padding:19px;gap:12px;border-radius:17px;background:var(--surface);border:1px solid var(--border);box-shadow:0 5px 18px #102d5a0b;transition:transform .18s,box-shadow .18s,border-color .18s}
+.college-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px #102d5a16;border-color:#9ac9ff}
+.college-card:has(input:checked){border-color:#1374ff;box-shadow:0 0 0 2px #1374ff22}
+.college-card>input{order:2;margin-left:auto;width:19px;height:19px}
+.college-main{flex:1;display:flex;flex-direction:column;min-width:0}
+.card-top{margin-bottom:14px}
+.country{font-size:.75rem;color:#15518f;background:#e9f3ff;padding:6px 11px}
+.college-name{font-size:1.06rem;line-height:1.35;color:var(--text);margin-bottom:7px}
+.college-area{font-size:.84rem;line-height:1.5;margin-bottom:12px}
+.email-line{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:auto}
+.copy-email{border:1px solid var(--border);background:var(--surface2);border-radius:8px;padding:4px 7px;cursor:pointer}
+.college-meta{margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}
+.source-link{display:inline-flex;align-items:center;justify-content:center;padding:9px 14px;border:1px solid #a9cafa;border-radius:10px;color:#0865dc;font-size:.83rem;text-decoration:none;font-weight:700}
+.source-link:hover{background:#eaf4ff}
+[data-theme=dark] body{background:#0d1527}
+[data-theme=dark] .hero-directory{background:radial-gradient(circle at 78% 35%,#164d86,#111e37 65%);border-color:#334864}
+[data-theme=dark] .hero-directory h1,[data-theme=dark] .hero-directory .hero-copy>p{color:#edf5ff}
+[data-theme=dark] .hero-badges>span,[data-theme=dark] .notice{background:#1b304e;color:#e5f0ff;border-color:#385575}
+[data-theme=dark] .hero-badges b,[data-theme=dark] .notice strong{color:#fff}
+[data-theme=dark] .country{background:#203d62;color:#b8dbff}
+[data-theme=dark] .source-link{color:#a6d2ff}
+@media(max-width:1150px){.college-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-directory{grid-template-columns:1fr .6fr}.hero-visual .globe{min-width:170px;min-height:170px}}
+@media(max-width:760px){.hero-directory{display:block;padding:32px 20px}.hero-directory h1{font-size:clamp(2rem,8vw,3rem)}.hero-visual{display:none}.workspace{padding:0 12px 50px}.filters{grid-template-columns:1fr}.college-grid{grid-template-columns:1fr}.directory-panel{padding:15px}.panel-head p{margin-left:0}.notice{margin:14px 12px}.hero-badges b{font-size:1.3rem}}
+@media(prefers-reduced-motion:reduce){.college-card{transition:none}.college-card:hover{transform:none}}

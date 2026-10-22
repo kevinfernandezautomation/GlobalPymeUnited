@@ -1,0 +1,17 @@
+{
+  "name": "global-pyme-united-qa",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:desktop": "playwright test --project=desktop",
+    "test:android": "playwright test --project=android",
+    "test:ios": "playwright test --project=ios",
+    "test:all": "playwright test",
+    "test:performance": "k6 run performance/navegacion.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "typescript": "^5.9.3"
+  }
+}

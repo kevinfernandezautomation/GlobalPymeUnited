@@ -1,0 +1,54 @@
+/* V11: diseño exclusivo del directorio; conserva los filtros y los controladores existentes. */
+:root{--directory-blue:#0867f9;--directory-navy:#092d5c}
+body:has(.directory-hero){background:#f5f9ff}
+.directory-hero{max-width:none!important;display:block!important;padding:0!important;min-height:360px;background:linear-gradient(105deg,#f1f8ff 0%,#e8f4ff 52%,#c6e4ff 100%);overflow:hidden;position:relative}
+.directory-hero:before{content:"";position:absolute;right:-90px;top:-170px;width:660px;height:660px;border:2px solid #ffffff70;border-radius:50%;box-shadow:0 0 0 55px #ffffff17,0 0 0 115px #fff2;pointer-events:none}
+.directory-hero .hero-inner{width:min(1480px,100%);margin:auto;display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.8fr);gap:26px;align-items:center;padding:40px clamp(18px,4vw,64px) 34px;position:relative}
+.directory-hero .hero-copy{position:relative;z-index:2}
+.directory-hero .eyebrow{color:#075fe0;letter-spacing:.035em;font-weight:850}
+.directory-hero h1{font-size:clamp(2.1rem,3.5vw,3.85rem);line-height:1.07;max-width:900px;margin:17px 0;letter-spacing:-.045em;color:#092044}
+.directory-hero .hero-accent{color:#0967f3}
+.directory-hero .hero-copy>p{color:#24436c;font-size:clamp(.95rem,1.3vw,1.09rem);max-width:800px;line-height:1.55}
+.directory-hero .hero-badges{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:24px}
+.directory-hero .hero-stat{display:flex;gap:10px;align-items:center;min-width:0;border:1px solid #d8e8fc;background:#ffffffeb;border-radius:13px;padding:11px 12px;box-shadow:0 7px 18px #1c5da014}
+.directory-hero .hero-stat b{display:block;font-size:1.3rem;color:#102c56;line-height:1.2;white-space:nowrap}
+.directory-hero .hero-stat small{display:block;color:#546b88;font-size:.72rem}
+.directory-hero .stat-icon{width:38px;height:38px;display:grid;place-items:center;flex:none;background:linear-gradient(135deg,#169cf7,#075bea);color:#fff;font-size:1.35rem;border-radius:10px}
+.directory-hero .hero-stat:nth-child(3) .stat-icon{background:linear-gradient(135deg,#8960fa,#5938d5)}
+.directory-hero .hero-stat:nth-child(4) .stat-icon{background:linear-gradient(135deg,#11cdb5,#0097aa)}
+.directory-hero .hero-visual{min-height:280px;display:grid;place-items:center;position:relative}
+.directory-hero .globe{font-size:clamp(130px,19vw,290px);line-height:1;filter:drop-shadow(0 22px 25px #1668b250);opacity:.88}
+.directory-hero .visual-panel{position:absolute;right:0;top:19%;display:grid;gap:12px;background:#ffffffec;border:1px solid #e3edff;border-radius:16px;padding:20px;box-shadow:0 14px 38px #10478435;color:#102b52;font-size:.82rem;font-weight:650}
+.directory-hero .visual-panel span:before{content:'✓';display:inline-grid;place-items:center;background:#0867f9;color:#fff;width:19px;height:19px;border-radius:50%;margin-right:8px}
+body:has(.directory-hero) .notice{max-width:calc(100% - 70px);width:min(1450px,calc(100% - 36px));margin:16px auto;background:#eaf3ff;border-color:#c5dfff;color:#143760;display:flex;gap:9px;align-items:center}
+.notice-icon{display:inline-grid;place-items:center;width:28px;height:28px;flex:none;border-radius:50%;background:#0967f3;color:#fff;font-size:1.1rem}
+body:has(.directory-hero) .workspace{max-width:1520px;padding:0 20px 65px}
+body:has(.directory-hero) .directory-panel{border-radius:20px;padding:22px;box-shadow:0 10px 35px #1649850b;border-color:#e2ebf6}
+body:has(.directory-hero) .panel-head{margin-bottom:19px;flex-wrap:wrap}
+body:has(.directory-hero) .panel-head h2{display:flex;align-items:center;gap:11px;font-size:1.55rem}
+.directory-icon{display:grid;place-items:center;width:40px;height:40px;background:#0870fa;color:#fff;border-radius:11px;font-size:1.9rem}
+body:has(.directory-hero) .panel-head .directory-select{margin-left:auto}
+.directory-proposal,.org-proposal{background:linear-gradient(110deg,#0875ff,#0056e5)!important;color:#fff!important;border:0!important;box-shadow:0 5px 13px #0b6df122}
+.directory-proposal{text-decoration:none;border-radius:10px;padding:11px 16px;font-size:.86rem;font-weight:750}
+body:has(.directory-hero) .filters{display:grid;grid-template-columns:1.3fr 1.25fr 1.15fr;gap:12px}
+body:has(.directory-hero) .filters select,body:has(.directory-hero) .filters .searchbox{min-width:0;background:#fff;border:1px solid #d6e3f4;border-radius:10px;min-height:46px}
+body:has(.directory-hero) .filters select{color:#18345b}
+.reset-filters{border:1px solid #0967f3;background:#fff;color:#075fe0;border-radius:10px;cursor:pointer;justify-self:end;padding:8px 17px;font-weight:650}
+body:has(.directory-hero) .college-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+body:has(.directory-hero) .college-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid #dfe8f5;border-radius:16px;padding:18px;min-width:0;box-shadow:0 6px 16px #1649850c}
+body:has(.directory-hero) .college-card>input{position:absolute;right:17px;top:15px;width:20px;height:20px}
+body:has(.directory-hero) .college-main{width:100%;flex:1}
+body:has(.directory-hero) .card-top{padding-right:30px;gap:8px}
+body:has(.directory-hero) .country{background:#f0f5fc;color:#20416d;font-size:.75rem}
+.org-type{display:inline-block;background:#e6f1ff;color:#005be5;padding:4px 9px;border-radius:20px;font-size:.72rem;font-weight:750}
+.org-identity{display:grid;grid-template-columns:54px minmax(0,1fr);column-gap:12px;margin:13px 0 14px;align-items:start}
+.org-avatar{grid-row:span 2;display:grid;place-items:center;width:54px;height:54px;border-radius:14px;background:linear-gradient(145deg,#e6f2ff,#f9fcff);border:1px solid #cfe1ff;color:#0062da;font-size:1.15rem;font-weight:900}
+.org-identity .college-name{font-size:.98rem;color:#122a4f}.org-identity .college-area{font-size:.79rem;line-height:1.5}
+body:has(.directory-hero) .college-email{font-size:.81rem}
+body:has(.directory-hero) .college-meta{margin-top:9px}
+.org-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:15px}
+.org-details,.org-proposal{display:grid;place-items:center;text-align:center;border:1px solid #0867f9;border-radius:9px;background:#fff;color:#065ce6;padding:9px 7px;font-size:.82rem;font-weight:700;text-decoration:none;cursor:pointer}
+.org-detail-panel{padding:12px;margin-top:12px;border:1px solid #cfe1fa;border-radius:10px;background:#f1f7ff;font-size:.82rem;color:#25466f;overflow-wrap:anywhere}
+[data-theme=dark] body:has(.directory-hero){background:#0d1420}[data-theme=dark] .directory-hero{background:linear-gradient(110deg,#142b4a,#1c497a)}[data-theme=dark] .directory-hero h1,[data-theme=dark] .directory-hero .hero-copy>p{color:#f0f6ff}[data-theme=dark] .directory-hero .hero-stat,[data-theme=dark] .directory-hero .visual-panel,[data-theme=dark] .college-card,[data-theme=dark] .org-details,[data-theme=dark] .reset-filters{background:#182a43;color:#f0f6ff}[data-theme=dark] .directory-hero .hero-stat b{color:#fff}[data-theme=dark] .org-identity .college-name{color:#fff}
+@media(max-width:1100px){.directory-hero .hero-inner{grid-template-columns:1fr}.directory-hero .hero-visual{display:none}.directory-hero .hero-badges{grid-template-columns:repeat(2,minmax(0,1fr))}body:has(.directory-hero) .college-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.directory-hero .hero-inner{padding:30px 17px}.directory-hero .hero-badges{grid-template-columns:repeat(2,minmax(0,1fr))}body:has(.directory-hero) .filters{grid-template-columns:1fr}body:has(.directory-hero) .college-grid{grid-template-columns:1fr}body:has(.directory-hero) .panel-head .directory-select{margin-left:0}body:has(.directory-hero) .notice{margin:12px auto}.directory-hero .hero-stat{padding:9px}.directory-hero .stat-icon{width:30px;height:30px}.directory-hero .hero-stat b{font-size:1.05rem}}

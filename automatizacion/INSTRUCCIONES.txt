@@ -1,0 +1,8 @@
+Pruebas de menú desktop, Android emulado e iOS emulado.
+1. Servir el proyecto desde su raíz: python -m http.server 8080
+2. cd automatizacion && npm install && npx playwright install
+3. npm run test:all
+4. Instalar k6 y ejecutar: npm run test:performance
+BASE_URL permite apuntar a otro servidor.
+Nota: los proyectos Android/iOS emulan dispositivos en Chromium/WebKit, no teléfonos físicos.
+No realizar carga contra producción sin autorización.
