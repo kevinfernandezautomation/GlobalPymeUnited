@@ -244,7 +244,7 @@ window.DIRECTORY = [
     "es": "Colegio de Profesionales en Informática y Computación",
     "en": "College of Information Technology and Computing Professionals",
     "area": "Ingenierías y tecnología",
-    "email": "arellys.cedeno@cpic.or.cr",
+    "email": "alianzas.estrategicas@cpic.or.cr",
     "type": "alliance",
     "site": "https://cpic.or.cr/beneficios-y-convenios/",
     "note": "Área de Alianzas Estratégicas publicada en directorio institucional.",
